@@ -182,7 +182,7 @@ interests = {
                 'Estonia 2020',
             ],
             'photos': [
-                '/static/images/interests/Travel/estonia2020/1.jpg',
+                '/static/images/interests/Travel/estonia2020/1.JPG',
                 '/static/images/interests/Travel/estonia2020/2.jpg',
                 '/static/images/interests/Travel/estonia2020/3.jpg',
                 '/static/images/interests/Travel/estonia2020/4.jpg',
@@ -420,7 +420,7 @@ profile = {
     'links': navigationMenu,
     'projects': projects,
     'about': {
-        'photo': '/static/images/face/thomas.png',
+        'photo': '/static/images/face/thomas.PNG',
         'notes': notes,
         'career': career,
         'education': education,
