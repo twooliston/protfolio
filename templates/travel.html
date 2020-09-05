@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="tighten-page-150">
+        <div class="lengthen-section-20 justify">
+            I am adventurous and love to explore and learn about new countries and cultures. Photos taken by yours
+            truly, on the Google Pixel.
+        </div>
+        <div class="lengthen-section-20">
+            What I gain from this hobby:
+        </div>
+    </div>
+
+    <div class="padding-bottom-20">
+        <ul class="tighten-section-310">
+            {% for i in range(0, profile.about.everything.travelIntro|length) %}
+                <li class="lengthen-section-10" >{{profile.about.everything.travelIntro[i]}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% for travel in profile.about.everything.travel %}
+            {% for i in range(0, travel.text|length) %}
+                <h2 class="lengthen-section-10" >{{travel.text[i]}}</h2>
+            {% endfor %}
+        <div class="wrap_template lengthen-section-20">
+            {% for i in range(0, travel.photos|length) %}
+                <img class="interests" src={{ travel.photos[i] }} alt="interests" />
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock content %}

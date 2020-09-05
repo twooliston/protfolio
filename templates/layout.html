@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet", type="text/css" href="{{ url_for('static', filename='style.css') }}" >
+    <link rel="stylesheet", type="text/css" href="{{ url_for('static', filename='heading.css') }}" >
+    <link rel="stylesheet", type="text/css" href="{{ url_for('static', filename='page.css') }}" >
+    <link rel="stylesheet", type="text/css" href="{{ url_for('static', filename='content.css') }}" >
+    <link rel="stylesheet", type="text/css" href="{{ url_for('static', filename='navigation.css') }}" >
+
+    <title>{{ profile.name }}</title>
+</head>
+<body>
+    <header>
+        <h1>
+            {% for i in range(0, profile.name|length) %}
+            <div> {{ profile.name[i] }} </div>
+            {% endfor %}
+        </h1>
+    </header>
+
+    <main class="presentation">
+        <div class="navsym"></div>
+        <section class="content">
+            {% block content %} {% endblock %}
+        </section>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href={{ profile.links.about }}>about</a></li>
+                <li><a class="nav-link" href={{ profile.links.work }}>work</a></li>
+                <li><a class="nav-link" href={{ profile.links.contact }}>contact</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>

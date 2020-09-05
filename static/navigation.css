@@ -1,0 +1,37 @@
+.nav-links,
+.presentation {
+    display: flex;
+}
+
+.nav-links {
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 5%;
+}
+
+.nav-links li {
+    padding: 3px 0;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+
+    font-family: Corbel;
+    font-weight: 400;
+    font: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: dimgrey;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        flex-direction: row;
+    }
+}

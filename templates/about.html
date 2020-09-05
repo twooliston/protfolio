@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+        <div class="about">
+            <div class="text margin-10">
+
+                <h2 class="padding-bottom-20"> {{ profile.about.career.title }} </h2>
+                {% for career in profile.about.career.allText %}
+                    <p class="brokenText justify">
+                        {{ career.brokenText }}
+                    </p>
+                {% endfor %}
+
+                <div class="mobileImage">
+                    <img src={{ profile.about.photo }} alt={{ profile.name }} />
+                </div>
+
+                <div class="notes">
+                    <div class="mobileNotes">
+                        <h2 class="padding-bottom-20"> {{ profile.about.notes.title }} </h2>
+                        {% for notes in profile.about.notes.allText %}
+                            <p class="brokenText center-text">
+                                {{ notes.brokenText }}
+                            </p>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <h2> {{ profile.about.education.title }} </h2>
+                <div class="allBoxes">
+                    {% for education in profile.about.education.allText %}
+                        <a href={{ education.link }} class="boxes">
+                            <img src={{ education.photo }} alt="education" />
+                        </a>
+                    {% endfor %}
+                </div>
+
+                <h2> Other Qualifications and Achievements </h2>
+                <div class="padding-bottom-75">
+                    {% for i in range(0, profile.about.qualifications|length) %}
+                        <div class="padding-top-20 center-text">
+                            {{ profile.about.qualifications[i] }}
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <h2> Other Important Information </h2>
+                <div class="padding-bottom-100 center-text">
+                    <button onclick="location.href='{{ profile.links.skills }}'" type="button" class="btn">Skills</button>
+                    <button onclick="location.href='{{ profile.links.hobbies }}'" type="button" class="btn">Sport</button>
+                    <button onclick="location.href='{{ profile.links.travel }}'" type="button" class="btn">Travel</button>
+                    <button onclick="location.href='{{ profile.links.food }}'" type="button" class="btn">Food</button>
+                </div>
+
+            </div>
+            <div class="image">
+                <img src={{ profile.about.photo }} alt={{ profile.name }} />
+            </div>
+        </div>
+{% endblock content %}

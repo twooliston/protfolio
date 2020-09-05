@@ -1,0 +1,48 @@
+.presentation {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.content {
+    width: 70%;
+    min-height: 75px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.navsym {
+    width: 15%;
+}
+
+nav {
+    width: 15%;
+    top: 55%;
+    position: fixed;
+    margin-left: 77.5%;
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column-reverse;
+    }
+
+    .projects {
+        width: 100%;
+        grid-template-columns: auto;
+    }
+
+    .navsym {
+        width: 0%;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        margin-left: 0%;
+    }
+}

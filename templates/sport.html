@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="tighten-page-150">
+        <div class="lengthen-section-20 justify">
+            Sport is an essential part of my life with many benefits to my life. COVID-19 has put a halt on some but
+            with a mix of home workouts and going for runs, I have maintained my need for physical activity.
+        </div>
+        <div class="lengthen-section-20">
+            What I gain from these hobbies:
+        </div>
+    </div>
+
+    <h2 class="padding-top-20">Basketball</h2>
+    <div class="padding-bottom-20">
+        <ul class="tighten-section-310">
+            {% for i in range(0, profile.about.everything.sport.basketball|length) %}
+                <li class="lengthen-section-10" >{{profile.about.everything.sport.basketball[i]}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h2 class="padding-top-20">Swimming</h2>
+    <div class="padding-bottom-20">
+        <ul class="tighten-section-310">
+            {% for i in range(0, profile.about.everything.sport.swimming|length) %}
+                <li class="lengthen-section-10" >{{profile.about.everything.sport.swimming[i]}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h2 class="padding-top-20">Running</h2>
+    <div class="padding-bottom-20">
+        <ul class="tighten-section-310">
+            {% for i in range(0, profile.about.everything.sport.running|length) %}
+                <li class="lengthen-section-10" >{{profile.about.everything.sport.running[i]}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}

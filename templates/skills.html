@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+        <div class="lengthen-section-20">
+            <h1 class="center-content width-100">Skills</h1>
+            <div class="tighten-section-200 justify">
+                Here are some of the skills I have acquired over my years in education and work experience. However,
+                this does not mark the limit, I am a quick learner and am able to pick up new languages (such as this
+                website which I decided to code in Python due to not having used it a lot before) and applications.
+            </div>
+
+        </div>
+
+    <div class="wrap_template">
+        <div>
+            <h2 class="padding-top-20">Coding</h2>
+                <ul class="padding-bottom-20 margin-side-40">
+                    {% for i in range(0, profile.about.skills.coding|length) %}
+                        <li class="lengthen-section-10" >{{profile.about.skills.coding[i]}}</li>
+                    {% endfor %}
+                </ul>
+        </div>
+        <div>
+            <h2 class="padding-top-20">Software</h2>
+                <ul class="padding-bottom-20 margin-side-40">
+                    {% for i in range(0, profile.about.skills.software|length) %}
+                        <li class="lengthen-section-10" >{{profile.about.skills.software[i]}}</li>
+                    {% endfor %}
+                </ul>
+        </div>
+        <div>
+            <h2 class="padding-top-20">Languages</h2>
+                <ul class="padding-bottom-20 margin-side-40">
+                    {% for i in range(0, profile.about.skills.languages|length) %}
+                        <li class="lengthen-section-10" >{{profile.about.skills.languages[i]}}</li>
+                    {% endfor %}
+                </ul>
+        </div>
+    </div>
+{% endblock content %}

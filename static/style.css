@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Corbel;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.label {
+    font-family: Corbel;
+    color: inherit;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.remove-dot {
+    list-style-type: none;
+}
+
+/*
+*
+*
+*            TEXT
+*
+*
+*/
+
+.width-100 {
+    width: 100%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-content {
+    justify-content: center;
+}
+
+.justify {
+        text-align: justify;
+}
+
+.left {
+        text-align: left;
+}
+
+/*
+*
+*
+*            PADDING/MARGIN
+*
+*
+*/
+
+.margin-side-40 {
+    margin: 40px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-top-40 {
+    padding-top: 40px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.padding-bottom-75 {
+    padding-bottom: 75px;
+}
+
+.padding-bottom-100 {
+    padding-bottom: 100px;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.tighten-page-150 {
+    padding: 0 150px;
+}
+
+.tighten-section-200 {
+    padding: 0 200px;
+}
+
+.tighten-section-310 {
+    padding: 0 310px;
+}
+
+.tighten-section-385 {
+    padding: 0 385px;
+}
+
+.lengthen-section-10 {
+    padding: 10px 0;
+}
+
+.lengthen-and-indent-section-10 {
+    padding: 10px 45px;
+}
+
+.lengthen-section-20 {
+    padding: 20px 0;
+}
+
+.lengthen-section-40 {
+    padding: 40px 0;
+}
+
+/*
+*
+*
+*            MOBILE
+*
+*
+*/
+
+@media screen and (max-width: 1024px) {
+    .tighten-page-150 {
+        padding: 0;
+    }
+
+    .tighten-section-200 {
+        padding: 0;
+    }
+
+    .tighten-section-310 {
+        padding: 0;
+    }
+
+    .tighten-section-385 {
+        padding: 0;
+    }
+}

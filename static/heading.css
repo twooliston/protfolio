@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6%;
+    padding-top: 4%;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 32px;
+    font-family: Corbel;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Corbel;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 16px;
+    font-family: Corbel;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 0%;
+    }
+}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="contact">
+        <div class="contact-item">
+            <a href={{ profile.links.linkedIn }} target="_blank">
+                <img
+                    src="/static/images/social/linkedin.svg"
+                    alt= "https://fontawesome.com/"
+                    class="icon linkedIn"
+                >
+            </a>
+            <a href={{ profile.links.linkedIn }} class="label" target="_blank">
+                {{ profile.name }}
+            </a>
+        </div>
+        <div class="contact-item">
+            <img src="/static/images/social/envelope.svg" class="icon">
+            <label class="label">
+                {{ profile.email }}
+            </label>
+        </div>
+    </div>
+{% endblock content %}
