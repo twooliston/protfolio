@@ -68,6 +68,9 @@ notes = {
             'brokenText': 'Passion in understanding the best way to design interactive systems',
         },
         {
+            'brokenText': 'Experience as a front and back-end developer',
+        },
+        {
             'brokenText': 'Currently located in London but flexible',
         },
     ],
