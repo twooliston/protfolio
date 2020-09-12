@@ -144,7 +144,7 @@ interests = {
     'sport':
     {
         'basketball': [
-            'Participle in University scrimmages as well as in London',
+            'Participated in University scrimmages as well as in London',
             'Work as part of a team to overcome the challenges presented by the opposing team',
             'Quarantine has slowed things down in relation to basketball games but hope to start it up again soon',
         ],
@@ -283,15 +283,12 @@ interests = {
             ],
             'photos': [
                 '/static/images/interests/Food/1.jpg',
-                '/static/images/interests/Food/2.jpg',
                 '/static/images/interests/Food/3.jpg',
                 '/static/images/interests/Food/4.jpg',
                 '/static/images/interests/Food/5.jpg',
                 '/static/images/interests/Food/6.jpg',
-                '/static/images/interests/Food/7.jpg',
                 '/static/images/interests/Food/8.jpg',
                 '/static/images/interests/Food/9.jpg',
-                '/static/images/interests/Food/10.jpg',
             ]
         },
     ],

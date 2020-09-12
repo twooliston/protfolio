@@ -11,29 +11,23 @@
     </div>
 
     <h2 class="padding-top-20">Basketball</h2>
-    <div class="padding-bottom-20">
-        <ul class="tighten-section-310">
+    <div class="padding-bottom-20 center-text">
             {% for i in range(0, profile.about.everything.sport.basketball|length) %}
-                <li class="lengthen-section-10 justify" >{{profile.about.everything.sport.basketball[i]}}</li>
+                <div class="lengthen-section-10" >{{profile.about.everything.sport.basketball[i]}}</div>
             {% endfor %}
-        </ul>
     </div>
 
     <h2 class="padding-top-20">Swimming</h2>
-    <div class="padding-bottom-20">
-        <ul class="tighten-section-310">
+    <div class="padding-bottom-20 center-text">
             {% for i in range(0, profile.about.everything.sport.swimming|length) %}
-                <li class="lengthen-section-10 justify" >{{profile.about.everything.sport.swimming[i]}}</li>
+                <div class="lengthen-section-10" >{{profile.about.everything.sport.swimming[i]}}</div>
             {% endfor %}
-        </ul>
     </div>
 
     <h2 class="padding-top-20">Running</h2>
-    <div class="padding-bottom-20">
-        <ul class="tighten-section-310">
+    <div class="padding-bottom-20 center-text">
             {% for i in range(0, profile.about.everything.sport.running|length) %}
-                <li class="lengthen-section-10 justify" >{{profile.about.everything.sport.running[i]}}</li>
+                <div class="lengthen-section-10" >{{profile.about.everything.sport.running[i]}}</div>
             {% endfor %}
-        </ul>
     </div>
 {% endblock content %}
