@@ -1,4 +1,4 @@
-import clipboard
+# import clipboard
 from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
@@ -486,10 +486,10 @@ def contact():
     return render_template("contact.html", profile=profile)
 
 
-@app.route('/copy_email')
-def copy_email():
-    clipboard.copy('thomaswooliston@gmail.com')
-    return ''
+# @app.route('/copy_email')
+# def copy_email():
+#     clipboard.copy('thomaswooliston@gmail.com')
+#     return ''
 
 
 @app.route('/about/bath')
