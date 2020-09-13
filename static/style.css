@@ -98,19 +98,23 @@ a {
 }
 
 .tighten-page-150 {
-    padding: 0 150px;
+    padding: 0 15%;
 }
 
 .tighten-section-200 {
-    padding: 0 200px;
+    padding: 0 20%;
 }
 
 .tighten-section-310 {
-    padding: 0 310px;
+    padding: 0 30%;
+}
+
+.tighten-section-30 {
+    padding: 0 30%;
 }
 
 .tighten-section-385 {
-    padding: 0 385px;
+    padding: 0 38.5%;
 }
 
 .lengthen-section-10 {

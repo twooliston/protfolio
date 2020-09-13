@@ -1,3 +1,4 @@
+import clipboard
 from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
@@ -62,9 +63,6 @@ notes = {
             'brokenText': 'Graduated in July 2020',
         },
         {
-            'brokenText': 'Interested in working close with design in a project-based environment',
-        },
-        {
             'brokenText': 'Passion in understanding the best way to design interactive systems',
         },
         {
@@ -81,10 +79,10 @@ career = {
     'allText': [
         {
             'brokenText': """
-            I am particularly interested in roles where I would be working close with design in a project-based
+            I am particularly interested in roles where I would be working closely with design in a project-based
             environment. My passion for design comes from being exposed to various interfaces. From a young age,
-            I have found a lot of designs overly complicated and am motivated to make the user experience as
-            attractive and accessible as possible.
+            I have found a lot of designs overly complicated and am motivated to make the user interface as
+            visually attractive and intuitive as possible.
             """,
         }
     ],
@@ -486,6 +484,12 @@ def website():
 @app.route('/contact')
 def contact():
     return render_template("contact.html", profile=profile)
+
+
+@app.route('/copy_email')
+def copy_email():
+    clipboard.copy('thomaswooliston@gmail.com')
+    return ''
 
 
 @app.route('/about/bath')

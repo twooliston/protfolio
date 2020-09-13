@@ -1,6 +1,19 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="contact tighten-section-385">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+            $(function() {
+              $('div#copyEmail').bind('click', function() {
+                $.getJSON('/copy_email',
+                    function(data) {
+                  //do nothing
+                });
+                return false;
+              });
+            });
+    </script>
+
+    <div class="contact center-text">
         <div class="contact-item">
             <a href={{ profile.links.linkedIn }} target="_blank">
                 <img
@@ -13,9 +26,9 @@
                 {{ profile.name }}
             </a>
         </div>
-        <div class="contact-item">
-            <img src="/static/images/social/envelope.svg" class="icon">
-            <label class="label">
+        <div id=copyEmail class="contact-item padding-top-20">
+            <img src="/static/images/social/envelope.svg" class="icon copyEmail">
+            <label class="label copyEmail">
                 {{ profile.email }}
             </label>
         </div>
