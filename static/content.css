@@ -77,11 +77,11 @@
 }
 
 .copyEmail:hover {
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .copyEmail:visited {
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 /* About */

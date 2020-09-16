@@ -69,6 +69,9 @@ notes = {
             'brokenText': 'Experience as a front and back-end developer',
         },
         {
+            'brokenText': 'Lead and managed 4 different software based projects over 3 years at university',
+        },
+        {
             'brokenText': 'Currently located in London but flexible',
         },
     ],
