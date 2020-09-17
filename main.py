@@ -66,7 +66,7 @@ notes = {
             'brokenText': 'Passion in understanding the best way to design interactive systems',
         },
         {
-            'brokenText': 'Experience as a front and back-end developer',
+            'brokenText': 'Experience as a Full Stack developer',
         },
         {
             'brokenText': 'Lead and managed 4 different software based projects over 3 years at university',
