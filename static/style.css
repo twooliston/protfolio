@@ -140,7 +140,7 @@ a {
 @media screen and (max-width: 1024px) {
 
     * {
-        font-family: Roboto;
+        /* TODO: find font that works on Iphone */
     }
 
     .tighten-page-150 {
