@@ -45,7 +45,7 @@ projects = [
 navigationMenu = {
     'home': '/',
     'about': '/about',
-    'skills': '/about/skills',
+    'skills': '/skills',
     'hobbies': '/about/sport',
     'travel': '/about/travel',
     'food': '/about/food',
@@ -445,7 +445,7 @@ def about():
     return render_template("about.html", profile=profile)
 
 
-@app.route('/about/skills')
+@app.route('/skills')
 def skills():
     return render_template("skills.html", profile=profile)
 
