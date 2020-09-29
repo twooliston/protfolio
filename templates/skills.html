@@ -28,6 +28,14 @@
                 </ul>
         </div>
         <div>
+            <h2 class="padding-top-20">Frameworks</h2>
+                <ul class="padding-bottom-20 margin-side-40">
+                    {% for i in range(0, profile.about.skills.frameworks|length) %}
+                        <li class="lengthen-section-10" >{{profile.about.skills.frameworks[i]}}</li>
+                    {% endfor %}
+                </ul>
+        </div>
+        <div>
             <h2 class="padding-top-20">Languages</h2>
                 <ul class="padding-bottom-20 margin-side-40">
                     {% for i in range(0, profile.about.skills.languages|length) %}

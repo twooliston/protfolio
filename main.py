@@ -138,6 +138,7 @@ skills = {
                  'Jupyter',
                  'Slack',
                  'Microsoft Office Applications'],
+    'frameworks': ['Angular2', 'Flask', 'Node.js', 'Laravel', 'Flutter'],
     'languages': ['Bilingual in English and French', 'Spanish to a B1 level']
 }
 
