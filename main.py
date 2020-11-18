@@ -37,6 +37,10 @@ projects = [
         'link': '/work/university',
     },
     {
+        'photo': '/static/images/projects/flick_logo.png',
+        'link': '/work/flick',
+    },
+    {
         'photo': '/static/images/projects/website.png',
         'link': '/work/website',
     },
@@ -478,6 +482,11 @@ def bluefuse():
 @app.route('/work/university')
 def university():
     return render_template("university.html", profile=profile)
+
+
+@app.route('/work/flick')
+def flick():
+    return render_template("flick.html", profile=profile)
 
 
 @app.route('/work/website')
