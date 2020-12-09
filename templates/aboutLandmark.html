@@ -1,0 +1,40 @@
+{% extends "__layout.html" %}
+{% block content %}
+
+<div class="tighten-page-150">
+
+    <div class="lengthen-section-40">
+        <h2>What is Landmark?</h2>
+        {% for i in range(0, profile.landmark.what|length) %}
+            <div class="padding-top-20 justify">
+                {{ profile.landmark.what[i] }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="lengthen-section-40">
+        <h2>Why Was my Time at Landmark Useful?</h2>
+        {% for i in range(0, profile.landmark.why|length) %}
+            <div class="padding-top-20 justify">
+                {{ profile.landmark.why[i] }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="center-text lengthen-section-40"> <!--  to cover two cells  -->
+        <h2>A Few of the Companies that use Landmark's Courses</h2>
+        <div class="padding-top-20">
+            {% for i in range(0, profile.landmark.companies|length) %}
+                <img class="companyLogo" src={{ profile.landmark.companies[i] }} alt="interests" />
+            {% endfor %}
+        </div>
+    </div>
+
+        <div class="padding-bottom-20 center-text">
+            <h2>Website</h2>
+           <a href={{ profile.about.education.allText[1].website }} target="_blank"><div>
+               <img src={{ profile.about.education.allText[1].photo }} alt="Graveney Sixth Form" class="website-photo"/>
+           </div></a>
+        </div>
+</div>
+{% endblock content %}

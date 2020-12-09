@@ -26,7 +26,12 @@
 }
 
 .nav-link:hover {
-  color: dimgrey;
+    color: dimgrey;
+}
+
+.current {
+    background: rgb(242, 242, 242);
+    border-color: rgb(242, 242, 242);
 }
 
 @media screen and (max-width: 1024px) {

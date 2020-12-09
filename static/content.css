@@ -203,6 +203,64 @@
     transition: all 0.4s ease 0s;
 }
 
+/*   Skills   */
+
+.skillsTools {
+    height: 150px;
+    padding: 10px;
+}
+
+.skillsTools img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.spaceBetween {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.skillsHigher {
+    display: flex;
+    background: rgb(200,241,200, 0.5);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.skillsAverage {
+    display: flex;
+    background: rgb(212,234,251, 0.5);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.skillsLower {
+    background: rgb(229,229,229, 0.5);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btnSkills {
+    padding: 15px 0;
+    margin: 20px 10px;
+    width: 145px;
+    text-transform: uppercase;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.btnSkills:hover {
+    background: rgb(242, 242, 242);
+    border-color: rgb(242, 242, 242);
+    transition: all 0.4s ease 0s;
+}
+
 /*   Interests   */
 
 .interests {
@@ -262,5 +320,8 @@
     }
     .bath-modules {
         display: block;
+    }
+    .skillsTools {
+        height: 70px;
     }
 }

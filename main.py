@@ -50,6 +50,10 @@ navigationMenu = {
     'home': '/',
     'about': '/about',
     'skills': '/skills',
+    'coding': '/skills/coding',
+    'software': '/skills/software',
+    'frameworks': '/skills/frameworks',
+    'languages': '/skills/languages',
     'hobbies': '/about/sport',
     'travel': '/about/travel',
     'food': '/about/food',
@@ -451,47 +455,67 @@ def about():
 
 @app.route('/skills')
 def skills():
-    return render_template("skills.html", profile=profile)
+    return redirect(url_for("skillsCoding.html"))
+
+
+@app.route('/skills/coding')
+def coding():
+    return render_template("skillsCoding.html", profile=profile, current='code')
+
+
+@app.route('/skills/software')
+def software():
+    return render_template("skillsSoftware.html", profile=profile, current='software')
+
+
+@app.route('/skills/frameworks')
+def frameworks():
+    return render_template("skillsFrameworks.html", profile=profile, current='frameworks')
+
+
+@app.route('/skills/languages')
+def languages():
+    return render_template("skillsLanguages.html", profile=profile, current='languages')
 
 
 @app.route('/about/sport')
 def sport():
-    return render_template("sport.html", profile=profile)
+    return render_template("interestsSport.html", profile=profile)
 
 
 @app.route('/about/travel')
 def travel():
-    return render_template("travel.html", profile=profile)
+    return render_template("interestsTravel.html", profile=profile)
 
 
 @app.route('/about/food')
 def food():
-    return render_template("food.html", profile=profile)
+    return render_template("interestsFood.html", profile=profile)
 
 
 @app.route('/work')
 def work():
-    return render_template("thomas.html", profile=profile)
+    return render_template("work.html", profile=profile)
 
 
 @app.route('/work/bluefuse')
 def bluefuse():
-    return render_template("bluefuse.html", profile=profile)
+    return render_template("workBluefuse.html", profile=profile)
 
 
 @app.route('/work/university')
 def university():
-    return render_template("university.html", profile=profile)
+    return render_template("workUniversity.html", profile=profile)
 
 
 @app.route('/work/flick')
 def flick():
-    return render_template("flick.html", profile=profile)
+    return render_template("workFlick.html", profile=profile)
 
 
 @app.route('/work/website')
 def website():
-    return render_template("website.html", profile=profile)
+    return render_template("workWebsite.html", profile=profile)
 
 
 @app.route('/contact')
@@ -499,31 +523,25 @@ def contact():
     return render_template("contact.html", profile=profile)
 
 
-# @app.route('/copy_email')
-# def copy_email():
-#     clipboard.copy('thomaswooliston@gmail.com')
-#     return ''
-
-
 @app.route('/about/bath')
 def bath():
-    return render_template("bath.html", profile=profile)
+    return render_template("aboutBath.html", profile=profile)
 
 
 @app.route('/about/landmark')
 def landmark():
-    return render_template("landmark.html", profile=profile)
+    return render_template("aboutLandmark.html", profile=profile)
 
 
 @app.route('/about/graveney')
 def graveney():
-    return render_template("graveney.html", profile=profile)
+    return render_template("aboutGraveney.html", profile=profile)
 
 
 @app.route('/about/lfcg')
 def lfcg():
-    return render_template("lfcg.html", profile=profile)
+    return render_template("aboutLFCG.html", profile=profile)
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

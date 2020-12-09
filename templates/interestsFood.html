@@ -1,0 +1,26 @@
+{% extends "__layout.html" %}
+{% block content %}
+    <div class="tighten-page-150">
+        <div class="lengthen-section-20 justify">
+            I love food. When traveling, going out for a meal or simply staying at home, I aim to squeeze in as many new and
+            worthwhile experiences as possible. The following photos, taken on my Pixel phone, are a small glimpse
+            into my experiences and I hope to continue to enjoy my eating experiences.
+        </div>
+        <div class="lengthen-section-20">
+            What I gain from this hobby:
+        </div>
+    </div>
+
+    {% for food in profile.about.everything.food %}
+        <ul class="tighten-section-310">
+            {% for i in range(0, food.text|length) %}
+                <li class="lengthen-section-10" >{{food.text[i]}}</li>
+            {% endfor %}
+        </ul>
+        <div class="wrap_template lengthen-section-20">
+            {% for i in range(0, food.photos|length) %}
+                <img class="interests" src={{ food.photos[i] }} alt="interests" />
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock content %}

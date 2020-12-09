@@ -1,0 +1,10 @@
+{% extends "__layout.html" %}
+{% block content %}
+    <div class="wrap_template">
+        {% for project in profile.projects %}
+            <a href={{ project.link }} class="work">
+                <img src={{ project.photo }} alt="project" />
+            </a>
+        {% endfor %}
+    </div>
+{% endblock content %}
