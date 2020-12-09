@@ -455,7 +455,7 @@ def about():
 
 @app.route('/skills')
 def skills():
-    return redirect(url_for("skillsCoding.html"))
+    return redirect(url_for("coding"))
 
 
 @app.route('/skills/coding')

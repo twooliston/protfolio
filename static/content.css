@@ -260,6 +260,12 @@
     border-color: rgb(242, 242, 242);
     transition: all 0.4s ease 0s;
 }
+.pcSkills {
+    display: block;
+}
+.mobileSkills {
+    display: none;
+}
 
 /*   Interests   */
 
@@ -323,5 +329,11 @@
     }
     .skillsTools {
         height: 70px;
+    }
+    .pcSkills {
+        display: none;
+    }
+    .mobileSkills {
+        display: block;
     }
 }
