@@ -16,8 +16,14 @@
         <button onclick="location.href='{{ profile.links.languages }}'" type="button" class="btnSkills {% if current=='languages' %}current{% endif %}">Spoken Languages</button>
     </div>
 
-    <div class="mobileSkills">
-        <h2> navigation pending for mobile devices... </h2>
+    <div class="mobileSkills dropdown">
+        <button type="button" class="btnSkills btnDropdown">{{ current }}</button>
+        <div class="dropdown-content">
+            <a href="{{ profile.links.coding }}">Coding Languages</a>
+            <a href="{{ profile.links.software }}">Software</a>
+            <a href="{{ profile.links.frameworks }}">Frameworks</a>
+            <a href="{{ profile.links.languages }}">Spoken Languages</a>
+        </div>
     </div>
 
     <section>
