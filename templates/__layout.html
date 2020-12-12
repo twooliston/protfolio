@@ -32,9 +32,41 @@
                 <li><a class="nav-link" href={{ profile.links.about }}>about</a></li>
                 <li><a class="nav-link" href={{ profile.links.work }}>work</a></li>
                 <li><a class="nav-link" href={{ profile.links.skills }}>skills</a></li>
-                <li><a class="nav-link" href={{ profile.links.contact }}>contact</a></li>
+<!--                <li><a class="nav-link" href={{ profile.links.contact }}>contact</a></li>-->
             </ul>
         </nav>
     </main>
+
+    <footer class="contact center-text padding-bottom-75">
+            <div class="contact-item">
+                <a href={{ profile.links.linkedIn }} target="_blank">
+                    <img
+                        src="/static/images/social/linkedin.svg"
+                        alt= "https://fontawesome.com/"
+                        class="icon Clickable"
+                    >
+                </a>
+                <a href={{ profile.links.linkedIn }} class="label" target="_blank">
+                    {{ profile.name }}
+                </a>
+            </div>
+            <div id=copyEmail class="contact-item">
+                <img src="/static/images/social/envelope.svg" class="icon copyEmail">
+                <label class="label copyEmail">
+                    {{ profile.email }}
+                </label>
+            </div>
+            <div class="contact-item">
+                <a href={{ profile.links.github }} target="_blank">
+                    <img
+                        src="/static/images/projects/software/github.png"
+                        class="icon Clickable"
+                    >
+                </a>
+                <a href={{ profile.links.github }} class="label" target="_blank">
+                    My GitHub
+                </a>
+            </div>
+    </footer>
 </body>
 </html>

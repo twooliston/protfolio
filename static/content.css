@@ -117,19 +117,20 @@
 
 /* Contact */
 
-.linkedIn {
+.Clickable {
     cursor: pointer;
 }
 
 .contact {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .contact-item {
     display: flex;
-    flex-direction: row;
+    align-content: baseline;
+    padding: 20px;
 }
 
 .copyEmail:hover {

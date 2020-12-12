@@ -62,6 +62,7 @@ navigationMenu = {
     'university': '/work/university',
     'contact': '/contact',
     'linkedIn': 'https://uk.linkedin.com/in/thomas-wooliston-1a3123149',
+    'github': 'https://github.com/twooliston',
 }
 
 notes = {
@@ -103,19 +104,19 @@ education = {
     'title': 'Education',
     'allText': [
         {
-            'photo': '/static/images/education/bath.jpg',
+            'photo': '/static/images/education/bath.png',
             'brokenText': 'University of Bath',
             'link': '/about/bath',
             'website': 'https://www.bath.ac.uk/',
         },
         {
-            'photo': '/static/images/education/landmark.jpg',
+            'photo': '/static/images/education/landmark.png',
             'brokenText': 'Landmark Forum',
             'link': '/about/landmark',
             'website': 'https://www.landmarkworldwide.com/',
         },
         {
-            'photo': '/static/images/education/graveney.jpg',
+            'photo': '/static/images/education/graveney.png',
             'brokenText': 'Graveney Sixth Form',
             'link': '/about/graveney',
             'website': 'https://www.graveney.org/',
@@ -136,19 +137,6 @@ qualifications = [
     'Landmark Forum (Leadership Development) - 2015',
     'National Citizenship Service Certificate - 2014',
 ]
-
-skills = {
-    'coding': ['JavaScript and TypeScript', 'HTML and CSS/SCSS', 'Python', 'PHP', 'SQL', 'C', 'WebGl', 'MATLAB'],
-    'software': ['Visual Studio, Intelij, Eclipse, PyCharm (developer tools on browsers)',
-                 'Github, Github Desktop',
-                 'Microsoft SQL Server Management Studio',
-                 'KiTTY and PuTTy',
-                 'Jupyter',
-                 'Slack',
-                 'Microsoft Office Applications'],
-    'frameworks': ['Angular2', 'Flask', 'Node.js', 'Laravel', 'Flutter'],
-    'languages': ['Bilingual in English and French', 'Spanish to a B1 level']
-}
 
 interests = {
     'sport':
@@ -435,7 +423,6 @@ profile = {
         'career': career,
         'education': education,
         'qualifications': qualifications,
-        'skills': skills,
         'everything': interests,
     },
     'landmark': landmark,
@@ -518,9 +505,9 @@ def website():
     return render_template("workWebsite.html", profile=profile)
 
 
-@app.route('/contact')
-def contact():
-    return render_template("contact.html", profile=profile)
+# @app.route('/contact')
+# def contact():
+#     return render_template("contact.html", profile=profile)
 
 
 @app.route('/about/bath')
