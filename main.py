@@ -3,6 +3,8 @@ from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
 
+# icons @ https://iconscout.com/icons/node-js?price=free&product_type=item
+
 references = {
     'bluefuse': {
         'name': 'Andy Ewings',
@@ -78,7 +80,7 @@ notes = {
             'brokenText': 'Experience as a Full Stack developer',
         },
         {
-            'brokenText': 'Lead and managed 4 different software based projects over 3 years at university',
+            'brokenText': 'Led and managed 4 different software based projects over 3 years at university',
         },
         {
             'brokenText': 'Currently located in London but flexible',
