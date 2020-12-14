@@ -385,6 +385,9 @@
     .bath-modules {
         display: block;
     }
+    .tools {
+        height: 70px;
+    }
     .skillsTools {
         height: 70px;
     }
