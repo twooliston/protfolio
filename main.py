@@ -46,6 +46,10 @@ projects = [
         'photo': '/static/images/projects/website.png',
         'link': '/work/website',
     },
+    {
+        'photo': '/static/images/projects/cargo-ship.png',
+        'link': '/work/port-management',
+    },
 ]
 
 navigationMenu = {
@@ -505,6 +509,11 @@ def flick():
 @app.route('/work/website')
 def website():
     return render_template("workWebsite.html", profile=profile)
+
+
+@app.route('/work/port-management')
+def port():
+    return render_template("workPortManagement.html", profile=profile)
 
 
 # @app.route('/contact')
