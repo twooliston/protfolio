@@ -47,6 +47,10 @@ projects = [
         'link': '/work/website',
     },
     {
+        'photo': '/static/images/projects/sort.png',
+        'link': '/work/sorting-algorithm',
+    },
+    {
         'photo': '/static/images/projects/cargo-ship.png',
         'link': '/work/port-management',
     },
@@ -514,6 +518,11 @@ def website():
 @app.route('/work/port-management')
 def port():
     return render_template("workPortManagement.html", profile=profile)
+
+
+@app.route('/work/sorting-algorithm')
+def sort():
+    return render_template("workSortingAlgorithm.html", profile=profile)
 
 
 # @app.route('/contact')
