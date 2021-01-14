@@ -1,5 +1,14 @@
 {% extends "__layout.html" %}
 {% block content %}
+    <h2 class="padding-top-20">Work Experience</h2>
+    <div class="wrap_template">
+        {% for experience in profile.experience %}
+            <a href={{ experience.link }} class="work">
+                <img src={{ experience.photo }} alt="project" />
+            </a>
+        {% endfor %}
+    </div>
+    <h2 class="padding-top-20">Personal Projects</h2>
     <div class="wrap_template">
         {% for project in profile.projects %}
             <a href={{ project.link }} class="work">

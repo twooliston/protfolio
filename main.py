@@ -29,18 +29,21 @@ references = {
     },
 }
 
-projects = [
+experience = [
     {
         'photo': '/static/images/projects/bluefuse.png',
         'link': '/work/bluefuse',
     },
     {
-        'photo': '/static/images/projects/bath.jpg',
-        'link': '/work/university',
-    },
-    {
         'photo': '/static/images/projects/flick_logo.png',
         'link': '/work/flick',
+    },
+]
+
+projects = [
+    {
+        'photo': '/static/images/projects/bath.jpg',
+        'link': '/work/university',
     },
     {
         'photo': '/static/images/projects/website.png',
@@ -427,6 +430,7 @@ profile = {
     'references': references,
     'links': navigationMenu,
     'projects': projects,
+    'experience': experience,
     'about': {
         'photo': '/static/images/face/thomas.PNG',
         'notes': notes,
