@@ -42,7 +42,7 @@ experience = [
 
 projects = [
     {
-        'photo': '/static/images/projects/bath.jpg',
+        'photo': '/static/images/projects/bath.png',
         'link': '/work/university',
     },
     {
