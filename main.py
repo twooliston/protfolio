@@ -1,5 +1,5 @@
 # import clipboard
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, send_file
 
 app = Flask(__name__)
 
@@ -552,6 +552,24 @@ def graveney():
 @app.route('/about/lfcg')
 def lfcg():
     return render_template("aboutLFCG.html", profile=profile)
+
+
+@app.route('/download/flick')
+def download_flick():
+    path = "./static/documents/Flick_Tech_Design_Analysis.pdf"
+    return send_file(path, as_attachment=True)
+
+
+@app.route('/download/diss')
+def download_diss():
+    path = "./static/documents/wooliston_thomas_dissertation_2019-20.pdf"
+    return send_file(path, as_attachment=True)
+
+
+@app.route('/download/entre')
+def download_entre():
+    path = "./static/documents/HobBuddy_Business_Plan.pdf"
+    return send_file(path, as_attachment=True)
 
 
 if __name__ == "__main__":
