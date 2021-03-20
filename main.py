@@ -31,20 +31,20 @@ references = {
 
 experience = [
     {
-        'photo': '/static/images/projects/bluefuse.png',
-        'link': '/work/bluefuse',
+        'photo': '/static/images/projects/well_easy.png',
+        'link': '/work/welleasy',
     },
     {
         'photo': '/static/images/projects/flick_logo.png',
         'link': '/work/flick',
     },
+    {
+        'photo': '/static/images/projects/bluefuse.png',
+        'link': '/work/bluefuse',
+    },
 ]
 
 projects = [
-    {
-        'photo': '/static/images/projects/bath.png',
-        'link': '/work/university',
-    },
     {
         'photo': '/static/images/projects/website.png',
         'link': '/work/website',
@@ -56,6 +56,10 @@ projects = [
     {
         'photo': '/static/images/projects/cargo-ship.png',
         'link': '/work/port-management',
+    },
+    {
+        'photo': '/static/images/projects/bath.png',
+        'link': '/work/university',
     },
 ]
 
@@ -504,14 +508,19 @@ def bluefuse():
     return render_template("workBluefuse.html", profile=profile)
 
 
-@app.route('/work/university')
-def university():
-    return render_template("workUniversity.html", profile=profile)
-
-
 @app.route('/work/flick')
 def flick():
     return render_template("workFlick.html", profile=profile)
+
+
+@app.route('/work/welleasy')
+def welleasy():
+    return render_template("workWellEasy.html", profile=profile)
+
+
+@app.route('/work/university')
+def university():
+    return render_template("workUniversity.html", profile=profile)
 
 
 @app.route('/work/website')
